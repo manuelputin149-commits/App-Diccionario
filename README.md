@@ -1,115 +1,328 @@
-# 📖 Diccionario - English Dictionary App
+📖 Diccionario - English Dictionary App
 
-Una aplicación móvil para buscar definiciones de palabras en inglés, desarrollada con React Native y Expo.
+- Nombre de la App:Diccionario (English Dictionary)
+- Asignatura/Profesor:Desarrollo de Aplicaciones Móviles / M.C. Leonel González Vidales
+- Periodo/Fecha:Septiembre 2025
+- URL del Repositorio:https://github.com/manuelputin149-commits/diccionario-app
 
-## 🚀 Características
 
-- Búsqueda de palabras en inglés
-- Definiciones detalladas por categoría gramatical (sustantivo, verbo, interjección, etc.)
-- Pronunciación fonética
-- Ejemplos de uso
-- Sinónimos disponibles
-- Interfaz moderna con tema oscuro
-- Navegación intuitiva entre pantallas
+📋 Descripción
 
-## 📱 Capturas de Pantalla
+Diccionario es una aplicación móvil desarrollada con React Native y Expo que permite a los usuarios buscar definiciones de palabras en inglés en tiempo real. La aplicación utiliza la Free Dictionary API para proporcionar definiciones detalladas, pronunciación fonética, ejemplos de uso y sinónimos. Cuenta con una interfaz moderna con tema oscuro y navegación fluida entre pantallas.
 
-### Pantalla de Inicio
-La pantalla principal da la bienvenida al usuario con un diseño limpio y un botón para comenzar la búsqueda.
+
+🚀 Características
+
+- 🔍 Búsqueda de Palabras: Campo de búsqueda intuitivo con sugerencias predefinidas
+- 📖 Definiciones Detalladas: Múltiples definiciones organizadas por categoría gramatical
+- 🗣️ Pronunciación Fonética: Transcripción fonética de cada palabra
+- 📝 Ejemplos de Uso: Frases de ejemplo para cada definición
+- 🔄 Sinónimos: Lista de palabras relacionadas
+- 🎨 Interfaz Moderna: Diseño con tema oscuro (#1a1a2e, #16213e, #0891b2)
+- 🧭 Navegación Stack: Sistema de navegación jerárquico con transiciones suaves
+- ⚡ API en Tiempo Real: Búsquedas instantáneas sin necesidad de API key
+- 📱 Diseño Responsivo: Optimizado para diferentes tamaños de pantalla
+
+
+📱 Capturas de Pantalla
+
+Pantalla de Inicio
+Pantalla de bienvenida con diseño minimalista y botón de acción principal.
 
 ![Pantalla de Inicio](./screenshots/home.jpg)
 
-### Pantalla de Búsqueda
-Permite al usuario ingresar cualquier palabra en inglés con sugerencias predefinidas.
+Pantalla de Búsqueda
+Campo de texto con sugerencias de palabras populares y validación en tiempo real.
 
 ![Pantalla de Búsqueda](./screenshots/search.jpg)
 
-### Pantalla de Resultados
-Muestra definiciones completas organizadas por tipo de palabra, con ejemplos y pronunciación.
+Pantalla de Resultados
+Definiciones organizadas por tipo gramatical con ejemplos, pronunciación y sinónimos.
 
 ![Pantalla de Resultados](./screenshots/result.jpg)
 
-## 🛠️ Tecnologías Utilizadas
 
-- **React Native** - Framework para desarrollo móvil
-- **TypeScript** - Tipado estático para JavaScript
-- **Expo** - Plataforma para desarrollo rápido
-- **React Navigation** - Navegación entre pantallas
-- **Dictionary API** - API gratuita para definiciones (https://dictionaryapi.dev/)
+🛠️ Tecnologías y Versiones
 
-## 📋 Requisitos Previos
+| Dependencia | Versión | Propósito |
+|------------|---------|-----------|
+| `react-native` | 0.81.4 | Framework de desarrollo móvil multiplataforma |
+| `react` | 19.1.0 | Biblioteca de interfaz de usuario |
+| `expo` | ~54.0.25 | Framework de desarrollo móvil |
+| `@react-navigation/native` | ^7.1.20 | Core de navegación entre pantallas |
+| `@react-navigation/native-stack` | ^7.6.3 | Stack navigator para navegación jerárquica |
+| `react-native-screens` | ~4.16.0 | Optimización de rendimiento para transiciones nativas |
+| `react-native-safe-area-context` | ~5.6.2 | Manejo de áreas seguras (notch, barras de estado) |
+| `expo-status-bar` | ~3.0.0 | Control de apariencia de barra de estado |
+| `typescript` | ^5.3.3 | Tipado estático para JavaScript |
+
+
+Verificar versiones instaladas:
+```bash
+npm list --depth=0
+```
+
+
+📋 Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado:
 
-- Node.js (versión 14 o superior)
-- npm o yarn
-- Expo CLI
-- Expo Go (aplicación móvil para pruebas)
+Node.js
+- Versión: v18.17.0 o superior
+```bash
+node --version
+```
 
-## 🔧 Instalación
+NPM o Yarn
+- NPM: 9.0.0+
+- Yarn: 1.22.19+ (opcional)
+```bash
+npm --version
+# o
+yarn --version
+```
 
-1. Clona este repositorio:
+Expo CLI
+- Versión: v6.3.0+
+```bash
+npx expo --version
+```
+
+Dispositivo/Emulador
+- Android: Android Studio v2022.3+ con Android SDK 33+ o Expo Go app
+- iOS: Xcode 14+ (solo macOS) o Expo Go app
+- Dispositivo físico: Expo Go instalado
+
+Verificar entorno completo:
+```bash
+npx expo doctor
+```
+
+
+🔧 Instalación
+
+1. Clonar el repositorio
 ```bash
 git clone https://github.com/manuelputin149-commits/diccionario-app.git
 cd diccionario-app
+```
 
-## 📁 Estructura del Proyecto
-diccionario-app/
-├── src/
-│   ├── utils/
-│   │   └── screens.ts              # Configuración de nombres de pantallas
-│   ├── screens/
-│   │   └── Dictionary/
-│   │       ├── HomeScreen.tsx       # Pantalla de inicio
-│   │       ├── SearchScreen.tsx     # Pantalla de búsqueda
-│   │       ├── ResultScreen.tsx     # Pantalla de resultados
-│   │       └── index.ts             # Exportaciones
-│   └── navigations/
-│       └── stacks/
-│           └── DictionaryNavigation.tsx  # Configuración de navegación
-├── screenshots/                     # Capturas de pantalla
-├── App.tsx                          # Punto de entrada de la aplicación
-├── package.json
-└── README.md
+2. Instalar dependencias
+```bash
+npm install
+```
 
-## 🎨 Características de Diseño
+3. Instalar dependencias de navegación
+```bash
+npm install @react-navigation/native @react-navigation/native-stack
+npx expo install react-native-screens react-native-safe-area-context
+```
 
-- **Tema oscuro**: Paleta de colores moderna (#1a1a2e, #16213e, #0891b2)
-- **Tipografía clara**: Optimizada para lectura
-- **Espaciado consistente**: Diseño limpio y organizado
-- **Feedback visual**: Indicadores de carga y estados de error
 
-## 🌐 API Utilizada
+🚀 Ejecución
 
-Esta aplicación utiliza la [Free Dictionary API](https://dictionaryapi.dev/):
+Iniciar servidor de desarrollo
+```bash
+npm start
+# o
+npx expo start
+```
 
-**Características de la API:**
-- Gratuita y sin necesidad de API key
-- Respuestas en formato JSON
-- Incluye pronunciación fonética
-- Múltiples definiciones por palabra
-- Ejemplos de uso
-- Sinónimos y antónimos
+Ejecutar en Android
+```bash
+npm run android
+# o
+npx expo start --android
+```
 
-## 📝 Ejemplo de Uso
+Ejecutar en iOS (solo macOS)
+```bash
+npm run ios
+# o
+npx expo start --ios
+```
 
+Ejecutar en Web
+```bash
+npm run web
+# o
+npx expo start --web
+```
+
+
+📖 Guía de Uso
+
+Paso 1: Pantalla de Inicio
 1. Abre la aplicación
-2. Toca "Comenzar búsqueda"
-3. Ingresa una palabra en inglés (ej: "hello")
-4. Presiona "Buscar" o toca una sugerencia
-5. Visualiza las definiciones organizadas por categoría
+2. Visualiza la pantalla de bienvenida con el icono del libro 📖
+3. Toca el botón "Comenzar búsqueda"
 
-## 🔮 Mejoras Futuras
+Paso 2: Realizar una Búsqueda
+1. En la pantalla de búsqueda, ingresa una palabra en inglés en el campo de texto
+2. Opción A: Escribe tu propia palabra y presiona "Buscar"
+3. Opción B: Toca una de las sugerencias predefinidas:
+   - hello
+   - computer
+   - beautiful
+   - happiness
 
-- Historial de búsquedas
-- Favoritos
-- Modo sin conexión (caché)
-- Reproducción de audio de pronunciación
-- Compartir definiciones
-- Búsqueda con autocompletado
-- Modo claro/oscuro configurable
+Paso 3: Ver Resultados
+1. La aplicación muestra:
+   - Palabra buscada en grande
+   - Pronunciación fonética (ej: /həˈloʊ/)
+   - Categorías gramaticales (Noun, Verb, Interjection)
+   - Definiciones numeradas para cada categoría
+   - Ejemplos de uso en cursiva
+   - Sinónimos cuando estén disponibles
+2. Toca "Nueva búsqueda" para volver
 
-## 🤝 Contribuciones
+Ejemplos de Palabras para Probar
+- Sustantivos: computer, happiness, freedom
+- Verbos: run, create, understand
+- Adjetivos: beautiful, amazing, complex
+
+
+📁 Estructura del Proyecto
+```
+diccionario-app/
+├── App.tsx                          # Componente raíz con NavigationContainer
+├── app.json                         # Configuración de Expo
+├── package.json                     # Dependencias y scripts
+├── tsconfig.json                    # Configuración de TypeScript
+├── index.ts                         # Punto de entrada
+├── assets/                          # Recursos estáticos
+│   ├── adaptive-icon.png
+│   ├── favicon.png
+│   ├── icon.png
+│   └── splash-icon.png
+├── screenshots/                     # Capturas de pantalla para README
+│   ├── home.jpg
+│   ├── search.jpg
+│   └── result.jpg
+└── src/
+    ├── components/                  # Componentes reutilizables
+    │   └── Navigation/
+    │       ├── IconBack.js          # Botón de retroceso personalizado
+    │       └── index.js
+    ├── navigations/                 # Configuración de navegación
+    │   ├── AppNavigation.js
+    │   ├── HandlerNavigation.js
+    │   ├── index.js
+    │   ├── Styles.styles.js         # Estilos globales de navegación
+    │   ├── stacks/
+    │   │   └── DictionaryNavigation.tsx  # Stack de pantallas
+    │   └── BottomTabNavigation/     # (Preparado para expansión)
+    ├── screens/                     # Pantallas de la aplicación
+    │   └── Dictionary/
+    │       ├── index.ts             # Exportaciones
+    │       ├── HomeScreen.tsx       # Pantalla de inicio
+    │       ├── SearchScreen.tsx     # Pantalla de búsqueda
+    │       └── ResultScreen.tsx     # Pantalla de resultados
+    └── utils/                       # Utilidades y constantes
+        ├── index.js
+        └── screens.ts               # Nombres de pantallas
+```
+
+
+Archivos Principales:
+- App.tsx: Componente raíz con NavigationContainer y providers
+- DictionaryNavigation.tsx: Configuración del Stack Navigator
+- HomeScreen.tsx: Pantalla de bienvenida
+- SearchScreen.tsx: Entrada de búsqueda con sugerencias
+- ResultScreen.tsx: Consumo de API y presentación de datos
+- screens.ts: Constantes para nombres de pantallas
+
+
+🌐 API Utilizada
+
+Free Dictionary API
+
+URL Base: `https://api.dictionaryapi.dev/api/v2/entries/en/{word}`
+
+Ejemplo de Request:
+```bash
+curl https://api.dictionaryapi.dev/api/v2/entries/en/hello
+```
+
+Características:
+- ✅ Completamente gratuita
+- ✅ Sin necesidad de API key
+- ✅ Respuestas en formato JSON
+- ✅ Pronunciación fonética
+- ✅ Múltiples definiciones por palabra
+- ✅ Ejemplos de uso en contexto
+- ✅ Sinónimos y antónimos
+- ✅ Sin límite de requests
+
+Documentación: [https://dictionaryapi.dev/](https://dictionaryapi.dev/)
+
+Estructura de Respuesta:
+```json
+{
+  "word": "hello",
+  "phonetic": "/həˈloʊ/",
+  "meanings": [
+    {
+      "partOfSpeech": "interjection",
+      "definitions": [
+        {
+          "definition": "A greeting (salutation) said when meeting someone...",
+          "example": "Hello, everyone.",
+          "synonyms": ["hi", "hey", "greetings"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+
+🔮 Mejoras Futuras
+
+- [ ] Historial de Búsquedas: Guardar últimas 20 palabras buscadas con AsyncStorage
+- [ ] Sistema de Favoritos: Marcar palabras favoritas con persistencia local
+- [ ] Modo Sin Conexión: Caché de definiciones para consulta offline
+- [ ] Audio de Pronunciación: Reproducir audio con expo-av
+- [ ] Compartir Definiciones: Compartir via redes sociales o mensajería
+- [ ] Búsqueda Predictiva: Autocompletado mientras se escribe
+- [ ] Modo Claro/Oscuro: Toggle para cambiar tema
+- [ ] Traducción a Español: Integración con Google Translate API
+- [ ] Búsqueda por Voz: Speech-to-text con expo-speech
+- [ ] Widget de Palabra del Día: Notificaciones diarias
+
+
+🐛 Solución de Problemas
+
+| Problema | Solución |
+|----------|----------|
+| Error de instalación de dependencias | `npm install --legacy-peer-deps` |
+| Metro bundler cache corrupto | `npx expo start --clear` |
+| Puerto 8081 ocupado | `npx expo start --port 8082` |
+| Dependencias desactualizadas | `npx expo doctor --fix` |
+| Errores de TypeScript | `npm install --save-dev @types/react@latest` |
+| La app no se conecta al servidor | `npx expo start --tunnel` |
+| Errores en Android | `cd android && ./gradlew clean && cd ..` |
+| Expo Go no escanea QR | Conectar a la misma red WiFi |
+
+Comandos de Diagnóstico:
+```bash
+
+# Verificar entorno
+npx expo doctor
+
+# Limpiar caché completamente
+npx expo start --clear
+
+# Reinstalar dependencias desde cero
+rm -rf node_modules package-lock.json
+npm install
+
+# Ver logs detallados
+npx expo start --dev-client
+```
+
+
+🤝 Contribuciones
 
 Las contribuciones son bienvenidas. Por favor:
 
@@ -119,12 +332,31 @@ Las contribuciones son bienvenidas. Por favor:
 4. Push a la rama (`git push origin feature/NuevaCaracteristica`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+Guía de Estilo:
+- Usar TypeScript para nuevos archivos
+- Seguir convenciones de nombres existentes
+- Documentar funciones complejas
+- Agregar comentarios en español
+
+
+📄 Licencia
 
 Este proyecto está bajo la Licencia MIT.
 
-## 🙏 Agradecimientos
 
-- [Free Dictionary API](https://dictionaryapi.dev/) por proporcionar la API gratuita
-- [Expo](https://expo.dev/) por facilitar el desarrollo móvil
-- [React Navigation](https://reactnavigation.org/) por el sistema de navegación
+👤 Desarrollador
+
+Jose Manuel Fuentes Gomez
+- GitHub: [@manuelputin149-commits](https://github.com/manuelputin149-commits)
+- Email: manuelputin149@gmail.com
+
+Última actualización: 10 de Enero 2025  
+Versión: 1.0.0
+
+
+🙏 Agradecimientos
+
+- [Free Dictionary API](https://dictionaryapi.dev/) por proporcionar la API gratuita y sin restricciones
+- [Expo](https://expo.dev/) por facilitar el desarrollo móvil multiplataforma
+- [React Navigation](https://reactnavigation.org/) por el robusto sistema de navegación
+- [M.C. Leonel González Vidales] por la guía y asesoría en el desarrollo
