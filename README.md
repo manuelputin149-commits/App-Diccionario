@@ -344,6 +344,46 @@ Guía de Estilo:
 Este proyecto está bajo la Licencia MIT.
 
 
+📲 Instalación Directa (APK)
+
+Última Versión: v1.0.0
+Fecha de compilación: 22 de Enero 2025
+
+Descargar APK para Android
+Descarga la última versión compilada de la aplicación:
+
+🔗 [Diccionario v1.0.0 - APK (Android)](https://expo.dev/accounts/lotso_bellaco/projects/Diccionario/builds/908b8fac-3515-491b-b9ed-88d183eba98d)
+
+Cómo instalar:
+
+Método 1: Desde tu celular
+1. Abre el enlace anterior en tu celular Android
+2. Toca el botón de descarga
+3. Una vez descargado, abre el archivo APK
+4. Toca "Instalar"
+
+Método 2: Desde tu computadora
+1. Descarga el APK en tu computadora
+2. Transfiere el archivo a tu celular vía USB o nube
+3. En tu celular, abre el archivo APK
+4. Toca "Instalar"
+
+Permisos necesarios:
+- ✅ Internet (para consultar la API de diccionarios)
+- ✅ Red (para verificar conectividad)
+
+Compatibilidad:
+- Android: 5.0 (API 21) o superior
+- Tamaño: ~50 MB
+- Arquitectura: ARM, ARM64, x86, x86_64
+
+⚠️ Importante:
+- El APK no está en Google Play Store
+- Necesitarás habilitar la instalación de fuentes desconocidas
+- Es completamente seguro y está firmado digitalmente
+- El enlace de descarga expira en 30 días
+
+
 👤 Desarrollador
 
 Jose Manuel Fuentes Gomez
