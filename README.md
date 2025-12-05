@@ -352,8 +352,7 @@ Fecha de compilación: 22 de Enero 2025
 Descargar APK para Android
 Descarga la última versión compilada de la aplicación:
 
-🔗 **[Descargar Diccionario v1.0.0.apk](https://github.com/manuelputin149-commits/App-Diccionario/releases/download/v1.0.0/Diccionario.apk)**
-
+🔗 [Descargar Diccionario v1.0.0.apk](https://github.com/manuelputin149-commits/App-Diccionario/releases/download/v1.0.0/Diccionario.apk)
 O visita la página de [Releases](https://github.com/manuelputin149-commits/App-Diccionario/releases) para ver el historial.
 
 Cómo instalar:
